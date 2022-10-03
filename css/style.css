@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding:0 1em;
+
+
+}
+.btn{
+    all:unset;
+    background-color: white;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 10em;
+    cursor: pointer;
+    padding: .5em;
+}
+
+.nav-top{
+    background-color: #0084fd;
+    height: 4.7rem;
+}
+
+.nav-top .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav-top ul{
+    display: none;
+}
+
+.nav-top .hamburger{
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*prima parte card*/
+
+.card{
+    background-color: #97cbf3;
+    border-radius: 1em;
+    margin-top: 1em;
+    margin-left:1em;
+    margin-right: 1em;
+}
+
+.cards h2{
+    color: #0084fd;
+    padding: 1rem;
+}
+.cards p{
+    padding: 1rem;
+}
+.store{
+    background-color: #0084fd;
+    color: white;
+    padding:.5em 3em;
+    margin: 1rem;
+}
+
+.img{
+    width: auto;
+}
+.img img{
+    display: block;
+    width: 100%;
+}
+.simbolo{
+    text-align: center;
+}
+.ico{
+    color:#0084fd;
+    font-size: 4rem;
+    padding-top:1rem;
+}
+
+/*seconda parte*/
+.strategic h2{
+    padding: 1rem 2rem;
+    color: white;
+}
+.strategic p{
+    padding: 1rem 2rem;
+    color: white;
+}
+.cardsofstrategic p{
+    color:black;
+}
+.cardsofstrategic h2{
+    color: black;
+}
+.strategic{
+    max-width: 1000px;
+    margin: 3rem auto;
+    background-color: rgb(154, 150, 241);
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+.planning{
+    flex-basis: 100%;
+}
+.cardsofstrategic{
+    flex-basis: 100%;
+    background-color: white;
+    border-radius: 1em;
+    margin: 2rem;
+    text-align: center;
+}
+.arrow{
+    background-color: rgb(154, 150, 241);
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+
+.arrow i{
+    margin-bottom: 2rem;
+}
+/*terza parte*/
+.testimonials h2{
+    color: rgb(154, 150, 241);
+    text-align: center;
+    padding: 1rem;
+}
+.testimonials p{
+    text-align: center;
+    padding: 1rem;
+}
+
+.cardofprofile{
+    background-color: rgb(154, 150, 241);
+    border-radius: 1rem;
+}
+.profilo{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+        
+}
+.profilo img{
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
+}
+
+@media screen and (min-width:811px){
+    .hamburger{
+        display:none;
+    }
+    .nav-top ul{
+        list-style: none;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .nav-top li{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .nav-top .nav-link{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 1rem;
+        text-decoration: none;
+        color: white;
+    }
+    .nav-top .nav-link:hover{
+        background-color: aqua;
+    }
+    
+    .nav .btn{
+        background-color: white;
+        padding: .5rem;
+    }
+    .nav-top .btn:hover{
+        background-color: lightgray;
+    }
+    
+}
