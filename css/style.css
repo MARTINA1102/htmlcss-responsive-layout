@@ -6,6 +6,7 @@
 
 html{
     font-family: 'Roboto', sans-serif;
+    line-height: 2rem;
 }
 
 .container{
@@ -38,6 +39,14 @@ html{
 }
 .nav-top ul{
     display: none;
+    
+}
+.nav-top li{
+    padding: 1rem;
+}
+.nav-top .nav-link{
+    text-decoration: none;
+    color: black;
 }
 
 .nav-top .hamburger{
@@ -45,15 +54,21 @@ html{
     font-size: 1.5rem;
 }
 
+
 /*prima parte card*/
 
 .card{
     background-color: #97cbf3;
     border-radius: 1em;
-    margin-top: 1em;
-    margin-left:1em;
-    margin-right: 1em;
+    margin-top: .5em;
+    margin-left:.5em;
+    margin-right: .5em;
 }
+.card .carta{
+    display: flex;
+    flex-direction: column;
+}
+
 
 .cards h2{
     color: #0084fd;
@@ -69,6 +84,7 @@ html{
     margin: 1rem;
 }
 
+
 .img{
     width: auto;
 }
@@ -76,6 +92,7 @@ html{
     display: block;
     width: 100%;
 }
+
 .simbolo{
     text-align: center;
 }
@@ -83,6 +100,9 @@ html{
     color:#0084fd;
     font-size: 4rem;
     padding-top:1rem;
+}
+.cards{
+    margin-top: 3em;
 }
 
 /*seconda parte*/
@@ -94,6 +114,9 @@ html{
     padding: 1rem 2rem;
     color: white;
 }
+.strategic-row{
+    background-color: rgb(154, 150, 241);
+}
 .cardsofstrategic p{
     color:black;
 }
@@ -101,7 +124,7 @@ html{
     color: black;
 }
 .strategic{
-    max-width: 1000px;
+    max-width: 800px;
     margin: 3rem auto;
     background-color: rgb(154, 150, 241);
     padding-bottom: 2rem;
@@ -111,13 +134,27 @@ html{
 }
 .planning{
     flex-basis: 100%;
+    padding-top: 2rem;
 }
+.planning h2{
+    font-size: 2rem;
+}
+.img-plan1{
+    margin: 3rem 0;
+}
+
+
+
 .cardsofstrategic{
     flex-basis: 100%;
     background-color: white;
-    border-radius: 1em;
-    margin: 2rem;
+    border-radius: 2em;
+    margin-top: 18rem;
     text-align: center;
+    padding-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;    
+
 }
 .arrow{
     background-color: rgb(154, 150, 241);
@@ -127,11 +164,12 @@ html{
 }
 
 .arrow i{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 /*terza parte*/
 .testimonials h2{
     color: rgb(154, 150, 241);
+    font-size: 2rem;
     text-align: center;
     padding: 1rem;
 }
@@ -143,21 +181,222 @@ html{
 .cardofprofile{
     background-color: rgb(154, 150, 241);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    gap:10px;
+    padding: 10px;
+    align-items: center;
+}
+.cardofprofile div{
+    text-align: center;
 }
 .profilo{
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    height: 200px;
+    width: 155px;
+    height: 155px;
     overflow: hidden;
     border-radius: 50%;
-        
+    flex-shrink: 0;
+    gap:1rem;
+    
 }
 .profilo img{
-    width: auto;
+    display: block;
+    width: 100%;
     height: 100%;
-    margin-left: -50px;
+ 
 }
+/*quarta parte*/
+.benefits{
+    background-color: rgb(154, 150, 241);
+    padding-bottom: 3rem;
+}
+.working{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem 0;
+}
+.number{
+    font-size: 3rem;
+    color: rgb(154, 150, 241);
+    top: 1rem;
+}
+h3{
+    color: rgb(154, 150, 241);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.vitae{
+    color: lightgray;
+    top: 1rem;
+}
+
+.more{
+    margin-top: 1rem;
+    color: white;
+    background-color: rgb(154, 150, 241);
+    padding: 1rem 3rem;
+}
+.number-card{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2em;
+    flex: 1 1 100%;
+}
+.card-num{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+.about-us{
+    padding-top: 3rem;
+}
+
+.about h2{
+    color: rgb(154, 150, 241);
+    font-size: 3rem;
+
+}
+.about p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.img-about{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+.img-about img{
+    width: 100%;
+    
+
+
+}
+.top-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-us h3{
+    font-size: 2rem;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+}
+.aboutwimg{
+    padding-bottom: 2rem;
+}
+.simple{
+    background-color: rgb(154, 150, 241);
+    padding-bottom: 3rem;
+}
+.get{
+    color: rgb(190, 187, 238);
+    padding-top: 3rem;
+
+}
+.gstar h2{
+    color: white;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.gstar h1{
+    font-size: 4rem;
+    color: rgb(255, 204, 0);
+    padding-top: 2rem;
+}
+.gstar p{
+    color: white;
+    padding: 2rem 0;
+}
+.started{
+    color: rgb(154, 150, 241);
+    padding: 1rem 3rem;
+}
+.gstar{
+    text-align: center;
+}
+.foot{
+    background-color: rgb(45, 44, 47);
+}
+.offoot{
+    color: white;
+    text-align: center;
+    padding: 3rem ;
+}
+.offoot p{
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (min-width:600px){
+    .container .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+    .carta{
+        flex: 0 1 58%;
+    }
+    .simbolo{
+        flex: 0 1 29%;
+    }
+    .demo{
+        width: 200px;
+        align-content: center;
+    }
+    .cardofprofile{
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    .cardofprofile div{
+        text-align:start;
+        margin: 1rem;
+    }
+    .testimonials .testimonial-text{
+        text-align: center;
+    }
+    .testimonials p{
+        text-align: start;
+    }
+    .number-card{
+        flex:1 1 48%;
+    }
+    .about-us{
+        display: flex;
+        flex-direction: row;
+        padding: 3rem;
+        gap: 2rem;
+    }
+    .about{
+        flex: 1 1 70%
+    }
+    .aboutwimg{
+        flex: 1 1 20%
+
+    }
+    .gstar{
+        max-width: 550px;
+    }
+    .offoot{
+        max-width: 550px;
+    }
+   
+}
+
+
+
 
 @media screen and (min-width:811px){
     .hamburger{
@@ -195,5 +434,51 @@ html{
     .nav-top .btn:hover{
         background-color: lightgray;
     }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .carta{
+        display: flex;
+        flex: 1 1 63%;
+    }
+    .left{
+        flex: 1 1 50%;
+    }
+    .demo{
+        flex:1 1 50%;
+    }
+    .simbolo{
+        flex: 1 1 29%;
+    }
+     .container .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+    
+    .strategic{
+        flex-direction: row;
+    }
+    .planning{
+        flex:1 1 50%
+    }
+    .cardsofstrategic{
+        flex: 1 1 50%;
+    }
+
+    .img-plan img{
+        width: 200px;margin-left: 5rem;
+    }
+    .cardsofstrategic{
+        margin-right: 0;
+        margin-left: 3rem;
+    }
+    .number-card{
+        flex: 1 1 30%;
+    }
     
 }
+
+
+
