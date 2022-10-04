@@ -144,7 +144,9 @@ html{
 }
 
 
-
+.develop{
+    font-style: italic;
+}
 .cardsofstrategic{
     flex-basis: 100%;
     background-color: white;
@@ -272,13 +274,12 @@ h3{
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 
 }
 .img-about img{
     width: 100%;
     
-
-
 }
 .top-image{
     position: absolute;
@@ -347,10 +348,12 @@ h3{
         justify-content: space-between;
      }
     .carta{
-        flex: 0 1 58%;
+        flex: 1 1 60%;
+        display: flex;
+        flex-direction: column;
     }
     .simbolo{
-        flex: 0 1 29%;
+        flex: 1 1 30%;
     }
     .demo{
         width: 200px;
@@ -440,6 +443,7 @@ h3{
     }
     .carta{
         display: flex;
+        flex-direction: row;
         flex: 1 1 63%;
     }
     .left{
@@ -447,6 +451,7 @@ h3{
     }
     .demo{
         flex:1 1 50%;
+        margin-top: 5rem;
     }
     .simbolo{
         flex: 1 1 29%;
